@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estações Ferroviárias</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="carousel.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Train View</div>
+        <nav>
+            <button id="listStationsButton">Estações ferroviárias por país</button>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar">
+                <button onclick="fetchStations()">Pesquisar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Estações Ferroviárias</h1>
+        <p class="date">06.03.25</p>
+
+        <section class="intro">
+            <h2>Você sabe o que é uma estação ferroviária?</h2>
+            <p>Uma estação ferroviária é uma infraestrutura onde trens param para embarque e desembarque de passageiros ou carga. Geralmente, ela conta com plataformas, bilheteiras, salas de espera e sinalizações para orientar os viajantes.</p>
+        </section>
+
+        <!-- Carrossel -->
+        <div class="carousel">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="img/1.webp" class="slide active">
+                <img src="img/13-estacoes-de-trem-mais-bonitas-do-mundo47_AvSRydA.webp" class="slide">
+                <img src="img/13-estacoes-de-trem-mais-bonitas-do-mundo59.webp" class="slide">
+                <img src="img/1estacaodaluz.webp" class="slide">
+                <img src="img/capa1.webp" class="slide">
+            </div>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>

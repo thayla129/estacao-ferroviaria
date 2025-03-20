@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Estação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="stationName"></h1>
+    <img id="stationImage" src="" alt="Imagem da Estação" />
+
+    <script>
+        function loadStationDetails() {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get("name");
+            const photo = params.get("photo");
+
+            document.getElementById("stationName").textContent = name;
+            document.getElementById("stationImage").src = photo || "placeholder.jpg";
+        }
+
+        window.onload = loadStationDetails;
+    </script>
+
+</body>
+</html>

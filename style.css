@@ -1,0 +1,127 @@
+/* Estilização geral */
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f7f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 28px;
+    color: #d4a017;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.date {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.intro {
+    padding: 20px;
+}
+
+.intro h2 {
+    font-size: 18px;
+    color: #666;
+}
+
+.intro p {
+    font-size: 16px;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    width: 60%;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
